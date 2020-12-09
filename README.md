@@ -18,19 +18,6 @@
 2.	创建变量对应的set与get函数，用来赋值与获取
 3.	利用toString来复写学生类，方便后面的写入文件 五、 核心代码 以下代码展示了Java如何读取文件，如何处理文件中的字符串，利用字节流来读取文件，以及用字符流来将字节转换为字符，并将字符流存储在字符型数组中，并结合数组下标来将处理好的字符赋值在动态字符串中
 四、核心代码
-import java.util.Scanner;
-import java.io.*;
-
-public class Test {
-    public static void main(String args[]) {
-        student xuesheng = new student();
-        System.out.println("输入姓名，性别，年龄，学号");
-        Scanner s = new Scanner(System.in);
-        String name = s.nextLine();
-        String sex = s.nextLine();
-        int age = s.nextInt();
-        int number = s.nextInt();
-        xuesheng.setGraduate(name, sex, age, number);
 
         try {
             FileReader fileReader = new FileReader("E:\\test.txt");
